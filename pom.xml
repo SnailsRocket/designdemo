@@ -12,6 +12,7 @@
         <module>1-00-factorymodel</module>
         <module>1-01-factorymodel</module>
         <module>1-02-factorymodel</module>
+        <module>1-03-factorymodel</module>
     </modules>
 
     <dependencies>
