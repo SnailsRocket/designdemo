@@ -17,8 +17,6 @@ https://bugstack.cn/md/develop/design-pattern/2020-05-20-%E9%87%8D%E5%AD%A6Java%
 
 
 
-
-
 ### 抽象工厂
 
 ### 建造者
