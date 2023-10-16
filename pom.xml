@@ -14,6 +14,7 @@
         <module>1-02-factorymodel</module>
         <module>1-03-factorymodel</module>
         <module>2-00-absfactorymodel</module>
+        <module>2-01-absfactorymodel</module>
     </modules>
     <properties>
         <target.java.version>1.8</target.java.version>

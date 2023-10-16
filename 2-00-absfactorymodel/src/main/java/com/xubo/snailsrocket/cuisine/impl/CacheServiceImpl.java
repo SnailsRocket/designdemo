@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @Author xubo
  * @Date 2023/10/16 10:33
- * @Description：
+ * @Description：缓存实现类 单例、集群都走这个逻辑
  * @Version 1.0
  */
 public class CacheServiceImpl {
