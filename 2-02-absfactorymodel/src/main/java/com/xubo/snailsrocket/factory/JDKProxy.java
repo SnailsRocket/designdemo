@@ -15,13 +15,6 @@ public class JDKProxy {
         InvocationHandler handler = new JDKInvocationHandler(cacheAdapter);
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         Class<?>[] classes = interfaceClass.getInterfaces();
-        T t = null;
-        try {
-            t = (T) Proxy.newProxyInstance(classLoader, new Class[]{classes[0]}, handler);
-        } catch (Exception e) {
-            System.out.println("e = " + e);
-            e.printStackTrace();
-        }
-        return t;
+        return (T) Proxy.newProxyInstance(classLoader, new Class[]{classes[0]}, handler);
     }
 }
