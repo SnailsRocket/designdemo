@@ -1,4 +1,4 @@
-package com.xubo.snailsrocket.cuisine.impl;
+package com.xubo.snailsrocket.impl;
 
 import com.xubo.snailsrocket.CacheService;
 import com.xubo.snailsrocket.RedisUtils;
@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author xubo
- * @Date 2023/10/16 10:33
- * @Description：缓存实现类 单例、集群都走这个逻辑
+ * @Date 2023/10/16 13:58
+ * @Description：
  * @Version 1.0
  */
 public class CacheServiceImpl implements CacheService {
