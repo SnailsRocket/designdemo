@@ -24,7 +24,7 @@ public class CouponCommodityService implements ICommodity {
 
     private static final CouponCommodityService instance = new CouponCommodityService();
 
-    public void CouponCommodityService() {
+    public CouponCommodityService() {
         register(getStrategyEnum(), instance);
     }
 

@@ -1,6 +1,9 @@
 package com.xubo.snailsrocket.design;
 
 import com.xubo.snailsrocket.design.store.ICommodity;
+import com.xubo.snailsrocket.design.store.impl.CardCommodityService;
+import com.xubo.snailsrocket.design.store.impl.CouponCommodityService;
+import com.xubo.snailsrocket.design.store.impl.GoodsCommodityService;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -17,13 +20,16 @@ public class ApiTest {
     @Test
     public void test_commodity() throws Exception {
         StoreFactory storeFactory = new StoreFactory();
+        CouponCommodityService couponCommodityService = new CouponCommodityService();
+        CardCommodityService cardCommodityService = new CardCommodityService();
+        GoodsCommodityService goodsCommodityService = new GoodsCommodityService();
 
         // 1. 优惠券
-        ICommodity commodityService_1 = storeFactory.getCommodityService(1);
+        ICommodity commodityService_1 = storeFactory.getCommodityService(2);
         commodityService_1.sendCommodity("10001", "EGM1023938910232121323432", "791098764902132", null);
 
         // 2. 实物商品
-        ICommodity commodityService_2 = storeFactory.getCommodityService(2);
+        ICommodity commodityService_2 = storeFactory.getCommodityService(3);
         Map<String,String> extMap = new HashMap<String,String>();
         extMap.put("consigneeUserName", "谢飞机");
         extMap.put("consigneeUserPhone", "15200292123");
@@ -36,7 +42,7 @@ public class ApiTest {
         }});
 
         // 3. 第三方兑换卡(爱奇艺)
-        ICommodity commodityService_3 = storeFactory.getCommodityService(3);
+        ICommodity commodityService_3 = storeFactory.getCommodityService(1);
         commodityService_3.sendCommodity("10001","AQY1xjkUodl8LO975GdfrYUio",null,null);
 
     }
