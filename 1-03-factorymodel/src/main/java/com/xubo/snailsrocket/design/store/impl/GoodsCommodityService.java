@@ -1,6 +1,7 @@
 package com.xubo.snailsrocket.design.store.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.xubo.snailsrocket.design.enums.CommonditytrategyEnum;
 import com.xubo.snailsrocket.design.goods.DeliverReq;
 import com.xubo.snailsrocket.design.goods.GoodsService;
 import com.xubo.snailsrocket.design.store.ICommodity;
@@ -21,6 +22,12 @@ public class GoodsCommodityService implements ICommodity {
 
     private GoodsService goodsService = new GoodsService();
 
+    private static final GoodsCommodityService instance = new GoodsCommodityService();
+
+    public GoodsCommodityService() {
+        register(getStrategyEnum(), instance);
+    }
+
     @Override
     public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
         DeliverReq deliverReq = new DeliverReq();
@@ -38,6 +45,11 @@ public class GoodsCommodityService implements ICommodity {
         logger.info("测试结果[优惠券]：{}", isSuccess);
 
         if (!isSuccess) throw new RuntimeException("实物商品发放失败");
+    }
+
+    @Override
+    public CommonditytrategyEnum getStrategyEnum() {
+        return CommonditytrategyEnum.GoodsCommodityService;
     }
 
     private String queryUserName(String uId) {
