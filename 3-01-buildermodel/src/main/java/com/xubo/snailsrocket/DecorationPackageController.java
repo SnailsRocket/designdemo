@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @Author xubo
  * @Date 2023/10/26 16:45
- * @Description：
+ * @Description：装修类里面很多逻辑，意味着来一种装修这个里面就要加一套逻辑
  * @Version 1.0
  */
 public class DecorationPackageController {

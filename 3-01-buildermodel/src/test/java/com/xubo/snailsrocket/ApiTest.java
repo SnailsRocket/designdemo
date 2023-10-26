@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 /**
  * @Author xubo
  * @Date 2023/10/26 16:47
- * @Description：
+ * @Description：通过type 执行指定对应的逻辑
  * @Version 1.0
  */
 public class ApiTest {
