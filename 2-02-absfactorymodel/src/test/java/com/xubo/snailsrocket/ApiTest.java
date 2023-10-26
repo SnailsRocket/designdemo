@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * @Author xubo
  * @Date 2023/10/16 14:00
- * @Description：
+ * @Description：抽象工厂
  * @Version 1.0
  */
 public class ApiTest {
