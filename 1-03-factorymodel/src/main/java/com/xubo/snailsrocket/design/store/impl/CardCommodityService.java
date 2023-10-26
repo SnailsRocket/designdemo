@@ -24,6 +24,7 @@ public class CardCommodityService implements ICommodity {
     // 模拟注入
     private IQiYiCardService iQiYiCardService = new IQiYiCardService();
 
+    // 这里手动创建，spring项目直接从context中获取
     private static final CardCommodityService instance = new CardCommodityService();
 
     /**
