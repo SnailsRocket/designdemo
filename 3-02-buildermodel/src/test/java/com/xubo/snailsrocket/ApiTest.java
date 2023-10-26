@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * @Author xubo
  * @Date 2023/10/26 17:08
- * @Description：
+ * @Description：使用构造者模式实现
  * @Version 1.0
  */
 public class ApiTest {
