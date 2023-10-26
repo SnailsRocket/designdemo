@@ -19,6 +19,9 @@
         <module>3-00-buildermodel</module>
         <module>3-01-buildermodel</module>
         <module>3-02-buildermodel</module>
+        <module>4-00-protomodel</module>
+        <module>4-01-protomodel</module>
+        <module>4-02-protomodel</module>
     </modules>
     <properties>
         <target.java.version>1.8</target.java.version>
