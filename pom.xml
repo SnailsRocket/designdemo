@@ -16,6 +16,9 @@
         <module>2-00-absfactorymodel</module>
         <module>2-01-absfactorymodel</module>
         <module>2-02-absfactorymodel</module>
+        <module>3-00-buildermodel</module>
+        <module>3-01-buildermodel</module>
+        <module>3-02-buildermodel</module>
     </modules>
     <properties>
         <target.java.version>1.8</target.java.version>
