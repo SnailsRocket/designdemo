@@ -1,6 +1,8 @@
 package com.xubo.snailsrocket.mq;
 
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.Date;
 
 /**
@@ -17,12 +19,7 @@ public class OrderMq {
 
     @Override
     public String toString() {
-        return "OrderMq{" +
-                "uid='" + uid + '\'' +
-                ", sku='" + sku + '\'' +
-                ", orderId='" + orderId + '\'' +
-                ", createOrderTime=" + createOrderTime +
-                '}';
+        return JSON.toJSONString(this);
     }
 
     public String getUid() {

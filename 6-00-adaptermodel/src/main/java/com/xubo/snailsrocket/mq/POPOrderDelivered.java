@@ -1,6 +1,8 @@
 package com.xubo.snailsrocket.mq;
 
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -18,16 +20,13 @@ public class POPOrderDelivered {
     private Date skuName;   // 商品名称
     private BigDecimal decimal; // 金额
 
+    /**
+     * 后面需要将当前对象转成json，所以这里需要易当前当时序列化
+     * @return
+     */
     @Override
     public String toString() {
-        return "POPOrderDelivered{" +
-                "uId='" + uId + '\'' +
-                ", orderId='" + orderId + '\'' +
-                ", orderTime=" + orderTime +
-                ", sku=" + sku +
-                ", skuName=" + skuName +
-                ", decimal=" + decimal +
-                '}';
+        return JSONObject.toJSONString(this);
     }
 
     public String getuId() {
