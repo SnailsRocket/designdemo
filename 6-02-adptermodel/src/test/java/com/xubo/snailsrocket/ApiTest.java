@@ -17,6 +17,7 @@ import java.util.HashMap;
  * @Author xubo
  * @Date 2023/10/30 14:34
  * @Description：适配器模式- 适配前 是个不同的实体类，适配后转成同一个实体类，通过反射实现
+ * 适配器不仅仅只是可以适配接口，还可以适配一些属性
  * @Version 1.0
  */
 public class ApiTest {
