@@ -16,7 +16,7 @@ import java.util.HashMap;
 /**
  * @Author xubo
  * @Date 2023/10/30 14:34
- * @Description：基本规律 目标明确
+ * @Description：适配器模式- 适配前 是个不同的实体类，适配后转成同一个实体类，通过反射实现
  * @Version 1.0
  */
 public class ApiTest {
