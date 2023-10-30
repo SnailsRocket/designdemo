@@ -22,6 +22,7 @@
         <module>4-00-protomodel</module>
         <module>4-01-protomodel</module>
         <module>4-02-protomodel</module>
+        <module>5-00-singletonmodel</module>
     </modules>
     <properties>
         <target.java.version>1.8</target.java.version>
