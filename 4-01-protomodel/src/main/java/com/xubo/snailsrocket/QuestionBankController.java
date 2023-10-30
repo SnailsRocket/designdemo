@@ -70,7 +70,6 @@ public class QuestionBankController {
             Map<String, String> option = choiceQuestionList.get(idx).getOption();
             for (String key : option.keySet()) {
                 detail.append(key).append("：").append(option.get(key)).append("\r\n");
-                ;
             }
             detail.append("答案：").append(choiceQuestionList.get(idx).getKey()).append("\r\n\n");
         }
