@@ -18,6 +18,7 @@ public class ZfbPay extends Pay{
 
     public String transfer(String uId, String tradeId, BigDecimal amount) {
         logger.info("模拟支付宝渠道支付划账开始。uId：{} tradeId：{} amount：{}", uId, tradeId, amount);
+        // payMode 初始化支付类的时候将payMode赋值给pay这个抽象接口
         boolean security = payMode.security(uId);
         logger.info("模拟支付宝渠道支付风控校验。uId：{} tradeId：{} security：{}", uId, tradeId, security);
         if (!security) {
