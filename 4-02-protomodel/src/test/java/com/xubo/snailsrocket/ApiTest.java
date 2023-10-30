@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * @Author xubo
  * @Date 2023/10/26 20:17
- * @Description：
+ * @Description：原型模式-初始化一个原型，后续需要生成当前对象的时候直接clone当前这个原型。
  * @Version 1.0
  */
 public class ApiTest {
