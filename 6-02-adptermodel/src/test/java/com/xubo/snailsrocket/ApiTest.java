@@ -22,6 +22,13 @@ import java.util.HashMap;
  */
 public class ApiTest {
 
+    /**
+     * 属性适配器
+     * @throws NoSuchMethodException
+     * @throws IllegalAccessException
+     * @throws InvocationTargetException
+     * @throws ParseException
+     */
     @Test
     public void test_MQAdapter() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, ParseException {
 
@@ -61,6 +68,9 @@ public class ApiTest {
         System.out.println("mq.orderMq(适配后)" + JSON.toJSONString(rebateInfo02));
     }
 
+    /**
+     * 接口适配器
+     */
     @Test
     public void test_itfAdapter() {
         OrderAdapterService popOrderAdapterService = new POPOrderAdapterServiceImpl();
