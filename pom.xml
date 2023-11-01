@@ -27,7 +27,9 @@
         <module>6-01-adaptermodel</module>
         <module>6-02-adptermodel</module>
         <module>7-00-bridgingmodel</module>
-        <module>7-01-bridging</module>
+        <module>7-01-bridgingmodel</module>
+        <module>8-00-combinatemodel</module>
+        <module>8-01-combinatemodel</module>
     </modules>
     <properties>
         <target.java.version>1.8</target.java.version>
