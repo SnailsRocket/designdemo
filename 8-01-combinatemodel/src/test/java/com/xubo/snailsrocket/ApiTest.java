@@ -30,6 +30,10 @@ public class ApiTest {
 
     private TreeRich treeRich;
 
+    /**
+     * @Before 这个注解执行在所有@Test方法前面
+     * 初始化tree
+     */
     @Before
     public void init() {
 
