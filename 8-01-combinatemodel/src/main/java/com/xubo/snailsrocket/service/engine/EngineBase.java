@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * @Author xubo
  * @Date 2023/10/30 18:00
- * @Description：
+ * @Description：1.8抽象类可以有具体实现，提供给它的子类使用
  * @Version 1.0
  */
 public abstract class EngineBase extends EngineConfig implements IEngine{
