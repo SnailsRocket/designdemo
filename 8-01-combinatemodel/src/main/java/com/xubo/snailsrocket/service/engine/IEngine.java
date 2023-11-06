@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @Author xubo
  * @Date 2023/10/30 17:59
- * @Description：
+ * @Description：对外暴露接口
  * @Version 1.0
  */
 public interface IEngine {

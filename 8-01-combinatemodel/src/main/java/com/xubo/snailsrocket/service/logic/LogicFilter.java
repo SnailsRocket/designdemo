@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @Author xubo
  * @Date 2023/10/30 18:00
- * @Description：
+ * @Description：过滤器接口
  * @Version 1.0
  */
 public interface LogicFilter {

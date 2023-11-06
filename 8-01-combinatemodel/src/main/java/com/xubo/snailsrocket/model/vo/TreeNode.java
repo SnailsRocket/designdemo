@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @Author xubo
  * @Date 2023/10/30 17:57
- * @Description：
+ * @Description：节点对象
  * @Version 1.0
  */
 public class TreeNode {

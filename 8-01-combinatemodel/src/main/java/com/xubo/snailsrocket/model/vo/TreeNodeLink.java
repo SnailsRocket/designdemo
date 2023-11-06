@@ -3,7 +3,7 @@ package com.xubo.snailsrocket.model.vo;
 /**
  * @Author xubo
  * @Date 2023/10/30 17:58
- * @Description：
+ * @Description：节点连接信息表
  * @Version 1.0
  */
 public class TreeNodeLink {

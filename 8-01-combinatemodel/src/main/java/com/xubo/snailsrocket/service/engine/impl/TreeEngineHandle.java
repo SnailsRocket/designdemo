@@ -10,11 +10,19 @@ import java.util.Map;
 /**
  * @Author xubo
  * @Date 2023/10/30 18:00
- * @Description：
+ * @Description：tree流程引擎
  * @Version 1.0
  */
 public class TreeEngineHandle extends EngineBase {
 
+    /**
+     *
+     * @param treeId treeId 数id
+     * @param userId userId 用户id
+     * @param treeRich tree
+     * @param decisionMatter 匹配规则
+     * @return
+     */
     @Override
     public EngineResult process(Long treeId, String userId, TreeRich treeRich, Map<String, String> decisionMatter) {
         // 决策流程

@@ -21,7 +21,10 @@ import java.util.Map;
 /**
  * @Author xubo
  * @Date 2023/10/31 13:51
- * @Description：
+ * @Description： 营销差异化发券，决策树引擎搭建
+ * 根据不同的性别以及年龄段发券 ~ 其实可以改成根据不同的标签发券
+ * 举一反三：这个设计模式可以迁移公司的业务，根据产品的碳标签选上游
+ * 项目8-00使用两个if-else实现，简单易懂，相比8-00 增加了一堆的逻辑，而且还不容易看懂，是不是过度设计
  * @Version 1.0
  */
 public class ApiTest {
@@ -32,6 +35,7 @@ public class ApiTest {
 
     /**
      * @Before 这个注解执行在所有@Test方法前面
+     * 构建一颗决策树
      * 初始化tree
      */
     @Before
@@ -50,12 +54,13 @@ public class ApiTest {
         TreeNodeLink treeNodeLink_11 = new TreeNodeLink();
         treeNodeLink_11.setNodeIdFrom(1L);
         treeNodeLink_11.setNodeIdTo(11L);
+        // 设置大于 等于 小于
         treeNodeLink_11.setRuleLimitType(1);
         treeNodeLink_11.setRuleLimitValue("man");
 
         // 链接：1->12
         TreeNodeLink treeNodeLink_12 = new TreeNodeLink();
-        treeNodeLink_12.setNodeIdTo(1L);
+        treeNodeLink_12.setNodeIdFrom(1L);
         treeNodeLink_12.setNodeIdTo(12L);
         treeNodeLink_12.setRuleLimitType(1);
         treeNodeLink_12.setRuleLimitValue("woman");
@@ -171,12 +176,16 @@ public class ApiTest {
 
     }
 
+    /**
+     * Iengine 接口
+     */
     @Test
     public void test_tree() {
         logger.info("决策树组合结构信息：\r\n" + JSON.toJSONString(treeRich));
 
         IEngine treeEngineHandle = new TreeEngineHandle();
 
+        // map里面放的是条件
         Map<String, String> decisionMatter = new HashMap<>();
         decisionMatter.put("gender", "man");
         decisionMatter.put("age", "29");

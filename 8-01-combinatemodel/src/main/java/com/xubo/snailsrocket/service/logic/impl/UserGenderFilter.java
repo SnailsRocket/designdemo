@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * @Author xubo
  * @Date 2023/10/30 18:01
- * @Description：
+ * @Description：性别过滤器
  * @Version 1.0
  */
 public class UserGenderFilter extends BaseLogic {
