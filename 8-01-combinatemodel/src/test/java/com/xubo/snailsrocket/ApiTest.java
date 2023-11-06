@@ -36,6 +36,7 @@ public class ApiTest {
     /**
      * @Before 这个注解执行在所有@Test方法前面
      * 构建一颗决策树
+     * 将if-else的各种可能性组成一个决策树，结果就是树的果实，过程就是树的子叶
      * 初始化tree
      */
     @Before

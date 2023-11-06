@@ -32,6 +32,7 @@ public abstract class EngineBase extends EngineConfig implements IEngine{
         while (treeNodeInfo.getNodeType().equals(1)) {
             String ruleKey = treeNodeInfo.getRuleKey();
             LogicFilter logicFilter = logicFilterMap.get(ruleKey);
+            // filter过滤器过滤出 gender
             String matterValue = logicFilter.matterValue(treeId, userId, decisionMatter);
             Long nextNode = logicFilter.filter(matterValue, treeNodeInfo.getTreeNodeLinkList());
             treeNodeInfo = treeNodeMap.get(nextNode);

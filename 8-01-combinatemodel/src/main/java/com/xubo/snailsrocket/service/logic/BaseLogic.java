@@ -9,9 +9,17 @@ import java.util.Map;
  * @Author xubo
  * @Date 2023/10/30 18:00
  * @Description：抽象类 要么是抽象方法没有实现方式，要么是有具体的实现
+ * 基本的逻辑判断
  * @Version 1.0
  */
 public abstract class BaseLogic implements LogicFilter{
+
+    /**
+     * 根据 matterValue 找出下一个节点id
+     * @param matterValue          决策值
+     * @param treeNodeLinkList
+     * @return
+     */
     @Override
     public Long filter(String matterValue, List<TreeNodeLink> treeNodeLinkList) {
         for (TreeNodeLink nodeLine : treeNodeLinkList) {
