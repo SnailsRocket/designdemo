@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * @Author xubo
@@ -29,7 +30,7 @@ public abstract class EngineBase extends EngineConfig implements IEngine{
         Long rootNodeId = treeRoot.getTreeRootNodeId();
         TreeNode treeNodeInfo = treeNodeMap.get(rootNodeId);
         //节点类型[NodeType]；1子叶、2果实
-        while (treeNodeInfo.getNodeType().equals(1)) {
+        while (Objects.equals(treeNodeInfo.getNodeType(), 1)) {
             String ruleKey = treeNodeInfo.getRuleKey();
             LogicFilter logicFilter = logicFilterMap.get(ruleKey);
             // filter过滤器过滤出 gender
